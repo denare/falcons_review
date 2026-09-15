@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falcons Basketball Academy — Website Launch Audit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <span class="wordmark">Launch Audit <em>/ Falcons Basketball Academy</em></span>
+    <span class="topbar-score" id="topbarScore">4.5<small>/10</small></span>
+  </div>
+  <nav class="pillnav" aria-label="Sections">
+    <a href="#top" class="pill" data-section="top">Overview</a>
+    <a href="#scoreline" class="pill" data-section="scoreline">Scoreline</a>
+    <a href="#pm" class="pill" data-section="pm">PM</a>
+    <a href="#po" class="pill" data-section="po">Product</a>
+    <a href="#ba" class="pill" data-section="ba">Business</a>
+    <a href="#uiux" class="pill" data-section="uiux">UI/UX</a>
+    <a href="#fe" class="pill" data-section="fe">Frontend</a>
+    <a href="#be" class="pill" data-section="be">Backend</a>
+    <a href="#mobile" class="pill" data-section="mobile">Mobile</a>
+    <a href="#qa" class="pill" data-section="qa">QA</a>
+    <a href="#sec" class="pill" data-section="sec">Security</a>
+    <a href="#data" class="pill" data-section="data">Data</a>
+    <a href="#devops" class="pill" data-section="devops">DevOps</a>
+    <a href="#roadmap" class="pill" data-section="roadmap">Roadmap</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <p class="hero-byline">Independent review of <a href="https://falcons-academy-v1.onrender.com/" target="_blank" rel="noopener">falcons-academy-v1.onrender.com</a> · 11 disciplines · September 2026</p>
+
+    <div class="score-block">
+      <div class="score-digit" data-target="4.5" aria-hidden="true">0.0</div>
+      <div class="score-suffix">
+        <span class="score-outof">/10</span>
+        <span class="verdict" data-status="blocker">Not Launch-Ready</span>
+      </div>
+    </div>
+
+    <p class="hero-summary">This site looks better than most youth-sports sites coming out of Dar es Salaam — clean layout, honest pricing, a working structure. It is still not ready for real marketing traffic. The policies protecting the children's data it collects don't exist yet, the enrollment form can fail silently on a bad connection, and the site is still living on a temporary web address. None of this is hard to fix. All three should be fixed before one more WhatsApp link goes out.</p>
+
+    <div class="hero-stats">
+      <div><strong>2</strong><span>Launch blockers</span></div>
+      <div><strong>9</strong><span>Sectors needing work</span></div>
+      <div><strong>0</strong><span>Sectors fully clear</span></div>
+    </div>
+  </section>
+
+  <section class="scoreline" id="scoreline">
+    <h2>The scoreline</h2>
+    <p class="section-lede">Every discipline we checked, worst first — because that's where the attention should go first.</p>
+    <ol class="bars">
+      <li data-score="3"><a href="#sec"><span class="bar-label">Security</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">3</span></a></li>
+      <li data-score="3"><a href="#ba"><span class="bar-label">Business Analysis</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">3</span></a></li>
+      <li data-score="4"><a href="#po"><span class="bar-label">Product</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">4</span></a></li>
+      <li data-score="4"><a href="#mobile"><span class="bar-label">Mobile</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">4</span></a></li>
+      <li data-score="4"><a href="#qa"><span class="bar-label">QA</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">4</span></a></li>
+      <li data-score="4"><a href="#data"><span class="bar-label">Data</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">4</span></a></li>
+      <li data-score="5"><a href="#pm"><span class="bar-label">Project Mgmt</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">5</span></a></li>
+      <li data-score="5"><a href="#be"><span class="bar-label">Backend</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">5</span></a></li>
+      <li data-score="5"><a href="#devops"><span class="bar-label">DevOps</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">5</span></a></li>
+      <li data-score="6"><a href="#uiux"><span class="bar-label">UI / UX</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">6</span></a></li>
+      <li data-score="6"><a href="#fe"><span class="bar-label">Frontend</span><span class="bar-track"><span class="bar-fill"></span></span><span class="bar-score">6</span></a></li>
+    </ol>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <h2>Sector-by-sector review</h2>
+    <p class="section-lede">Each review links straight to the live page it's based on — click through and see it yourself.</p>
+
+    <div class="cards">
+
+      <!-- PM -->
+      <article class="card" id="pm" data-status="work">
+        <header class="card-head">
+          <span class="card-role">Project Management</span>
+          <span class="card-score">5<small>/10</small></span>
+          <span class="status-pill">Needs Work</span>
+        </header>
+        <p class="card-review">Nobody's decided if this web address is permanent. The site itself is functionally solid, but production readiness assumes basic groundwork — a real domain, a hosting tier that doesn't nap when idle — is locked in. Right now, neither is confirmed anywhere.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/">
+            <iframe title="Live homepage" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: the site is still running on the default <code>onrender.com</code> address, no custom domain mapped.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Get written sign-off on the production domain and hosting tier before promising a launch date to anyone.</li>
+          <li>Document a rollback plan — a previous working deploy — before pushing the launch build live.</li>
+        </ul>
+      </article>
+
+      <!-- Product Owner -->
+      <article class="card" id="po" data-status="work">
+        <header class="card-head">
+          <span class="card-role">Product</span>
+          <span class="card-score">4<small>/10</small></span>
+          <span class="status-pill">Needs Work</span>
+        </header>
+        <p class="card-review">The pricing is genuinely good work — clear tiers, transparent fees, a fair sibling discount. None of that math actually lives in the system, though. Every discount, installment, and promo gets recalculated by a person, by hand, at signup. That's exactly where refund arguments start.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/programs#fees-section">
+            <iframe title="Live pricing table" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: four overlapping pricing rules (location, siblings, installments, first-month-free) with no checkout enforcing any of them.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/programs#fees-section" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Freeze the pricing rules — location × siblings × installments × promo — as one written source of truth everyone enrolls against.</li>
+          <li>Confirm the "Join the Roster" newsletter button actually sends its data somewhere, not nowhere.</li>
+        </ul>
+      </article>
+
+      <!-- Business Analyst -->
+      <article class="card" id="ba" data-status="blocker">
+        <header class="card-head">
+          <span class="card-role">Business Analysis</span>
+          <span class="card-score">3<small>/10</small></span>
+          <span class="status-pill">Launch Blocker</span>
+        </header>
+        <p class="card-review">The sharpest problem on the whole site. The enrollment form collects a child's name, age, school, and a parent's phone number — and the Privacy, Terms, and Safeguarding policies that should govern all of it are one placeholder page reading "coming soon." For a youth sports business, that isn't a formality to skip.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/legal">
+            <iframe title="Live legal page" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: Privacy, Terms, and Safeguarding all route to the same unfinished stub.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/legal" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Publish a real Privacy Policy and a real Safeguarding Policy before the enrollment form collects one more record.</li>
+          <li>Get documented parental consent before naming a minor by age in a public testimonial ("Baraka M., age 15").</li>
+        </ul>
+      </article>
+
+      <!-- UI/UX -->
+      <article class="card" id="uiux" data-status="work">
+        <header class="card-head">
+          <span class="card-role">UI / UX Design</span>
+          <span class="card-score">6<small>/10</small></span>
+          <span class="status-pill">Needs Work</span>
+        </header>
+        <p class="card-review">The layout, spacing, and program breakdown are clean and easy to follow — genuinely above average for this space. Two things undercut the trust it's trying to build: every photo on the site is anonymous stock imagery, and the homepage's headline stats currently render as a flat "0+".</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/">
+            <iframe title="Live homepage hero and stats" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: "0+ Athletes Trained," "0+ Partner Schools," "0+ Years Running" — visible in the page before any animation runs.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Replace stock photography with real academy photos — parents notice the difference immediately.</li>
+          <li>Fix the stat counters so a static "0+" is never what a visitor actually sees.</li>
+        </ul>
+      </article>
+
+      <!-- Frontend -->
+      <article class="card" id="fe" data-status="work">
+        <header class="card-head">
+          <span class="card-role">Frontend Development</span>
+          <span class="card-score">6<small>/10</small></span>
+          <span class="status-pill">Needs Work</span>
+        </header>
+        <p class="card-review">Under the hood this is a modern, well-structured build, and it shows — fast page structure, sensible routing. The catch: hero images are served at full desktop resolution to every device, and the enrollment form only works once JavaScript has fully loaded — a real risk on the connections this audience actually has.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/programs">
+            <iframe title="Live programs page images" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: hero images requested at 3840px wide regardless of screen size.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/programs" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Set correct responsive image sizing so phones stop downloading desktop-size images.</li>
+          <li>Add a fallback so the enrollment form doesn't silently fail before the page finishes loading on a slow connection.</li>
+        </ul>
+      </article>
+
+      <!-- Backend -->
+      <article class="card" id="be" data-status="work">
+        <header class="card-head">
+          <span class="card-role">Backend Development</span>
+          <span class="card-score">5<small>/10</small></span>
+          <span class="status-pill">Needs Work</span>
+        </header>
+        <p class="card-review">There's no visible evidence of what happens after someone submits the enrollment form — and that absence is itself the finding. That pipeline needs to be confirmed and hardened, especially around a field that will contain a child's personal details.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/contact?subject=Enroll+My+Child#form-section">
+            <iframe title="Live enrollment form" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: the enrollment form — its destination and validation are unconfirmed from outside.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/contact?subject=Enroll+My+Child#form-section" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Confirm exactly where form submissions go, and add server-side validation on every field.</li>
+          <li>Add basic rate limiting so the form can't be flooded with spam submissions.</li>
+        </ul>
+      </article>
+
+      <!-- Mobile -->
+      <article class="card" id="mobile" data-status="work">
+        <header class="card-head">
+          <span class="card-role">Mobile Experience</span>
+          <span class="card-score">4<small>/10</small></span>
+          <span class="status-pill">Needs Work</span>
+        </header>
+        <p class="card-review">There's no native app, which is fine — the mobile-web experience is standing in for one. It isn't built for the connectivity this audience actually has, though. A parent who loses signal mid-form loses everything typed, with nothing saved and nothing retried.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/">
+            <iframe title="Live footer and WhatsApp link" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: the only backup contact channel is a raw WhatsApp link, no SMS or offline fallback.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Add offline handling so a dropped connection doesn't wipe a half-finished enrollment form.</li>
+          <li>Add a fallback contact option beyond WhatsApp, for the moments WhatsApp itself isn't reachable.</li>
+        </ul>
+      </article>
+
+      <!-- QA -->
+      <article class="card" id="qa" data-status="work">
+        <header class="card-head">
+          <span class="card-role">Quality Assurance</span>
+          <span class="card-score">4<small>/10</small></span>
+          <span class="status-pill">Needs Work</span>
+        </header>
+        <p class="card-review">Four different entry points into the contact form, each pre-filling a different subject line, all need to be checked individually — and there's no sign any of this, or the pricing table's arithmetic, has been tested under real 3G conditions rather than office wifi.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/contact?subject=Book+a+Free+Trial#form-section">
+            <iframe title="Live trial booking form" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: one of four differently-tagged paths into the same form — worth checking each still works.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/contact?subject=Book+a+Free+Trial#form-section" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Test every "Enroll" and "Book Trial" link to confirm it pre-fills the right subject line, every time.</li>
+          <li>Run and log a full test pass on a throttled 3G connection before calling anything launch-ready.</li>
+        </ul>
+      </article>
+
+      <!-- Security -->
+      <article class="card" id="sec" data-status="blocker">
+        <header class="card-head">
+          <span class="card-role">Security</span>
+          <span class="card-score">3<small>/10</small></span>
+          <span class="status-pill">Launch Blocker</span>
+        </header>
+        <p class="card-review">A public form with no visible rate limiting is collecting children's personal information, with no published policy governing how it's stored, who can see it, or how long it's kept. That combination is the single biggest risk on this site.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/contact?subject=Enroll+My+Child#form-section">
+            <iframe title="Live PII collection form" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: name, age, school, and guardian phone collected here, with the linked Safeguarding policy still a placeholder.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/contact?subject=Enroll+My+Child#form-section" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Run a basic security scan on the live form and fix any exposed data routes or missing security headers.</li>
+          <li>Lock down who can access submitted enrollment records, and for how long they're retained.</li>
+        </ul>
+      </article>
+
+      <!-- Data -->
+      <article class="card" id="data" data-status="work">
+        <header class="card-head">
+          <span class="card-role">Data Engineering</span>
+          <span class="card-score">4<small>/10</small></span>
+          <span class="status-pill">Needs Work</span>
+        </header>
+        <p class="card-review">The homepage promises to show real numbers — athletes trained, schools partnered, years running — and currently shows none of them. That's a small symptom of a bigger gap: there's no evidence any of the site's lead data lives in one real, structured place.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/">
+            <iframe title="Live homepage stat counters" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: all four hero stats read "0" in the page before any script runs.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Put every lead and enrollment submission into one real database, not a mix of inbox and spreadsheet.</li>
+          <li>Replace the static "0+" stats with real, current numbers — or remove them until they are real.</li>
+        </ul>
+      </article>
+
+      <!-- DevOps -->
+      <article class="card" id="devops" data-status="work">
+        <header class="card-head">
+          <span class="card-role">DevOps</span>
+          <span class="card-score">5<small>/10</small></span>
+          <span class="status-pill">Needs Work</span>
+        </header>
+        <p class="card-review">The site is still living on a temporary Render web address with no confirmed custom domain, and it's unclear whether it's on a tier that stays awake between visits. If it isn't, the first visitor after a quiet spell could wait 30-60 seconds and assume the site is broken.</p>
+        <div class="proof">
+          <div class="proof-frame" data-src="https://falcons-academy-v1.onrender.com/">
+            <iframe title="Live site on temporary domain" loading="lazy"></iframe>
+          </div>
+          <p class="proof-caption">Live: check the address bar — still <code>falcons-academy-v1.onrender.com</code>, no custom domain.</p>
+          <a class="proof-link" href="https://falcons-academy-v1.onrender.com/" target="_blank" rel="noopener">Open this page on the live site</a>
+        </div>
+        <button class="fix-toggle" aria-expanded="false">Fix before launch</button>
+        <ul class="fix-list">
+          <li>Move to an always-on hosting tier and finalize the custom domain before any real traffic arrives.</li>
+          <li>Set up basic uptime monitoring so a failure gets caught before a parent reports it.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="roadmap" id="roadmap">
+    <h2>Path to 10/10</h2>
+    <p class="section-lede">Eleven fixes, ordered by what breaks trust fastest if left alone.</p>
+
+    <div class="priority-group" data-priority="blocker">
+      <h3>P0 — before any real traffic</h3>
+      <ul>
+        <li><span class="tag">Business · Security</span>Publish a real Privacy Policy and Safeguarding Policy — replace the "coming soon" stub.</li>
+        <li><span class="tag">Backend · Security</span>Add server-side validation and rate limiting to the enrollment form.</li>
+        <li><span class="tag">PM · DevOps</span>Lock in a custom domain and confirm an always-on hosting tier.</li>
+        <li><span class="tag">UI/UX · Data</span>Fix or remove the homepage stat counters — no visitor should see a static "0+".</li>
+      </ul>
+    </div>
+
+    <div class="priority-group" data-priority="work">
+      <h3>P1 — before the marketing push</h3>
+      <ul>
+        <li><span class="tag">UI/UX</span>Replace stock photography with real academy photos.</li>
+        <li><span class="tag">Frontend</span>Fix responsive image sizing so mobile doesn't download desktop-size files.</li>
+        <li><span class="tag">Mobile</span>Add offline/retry handling for the enrollment form on flaky connections.</li>
+        <li><span class="tag">Security · Business</span>Get signed consent before naming a minor by age in a public testimonial.</li>
+      </ul>
+    </div>
+
+    <div class="priority-group" data-priority="ok">
+      <h3>P2 — before scaling up</h3>
+      <ul>
+        <li><span class="tag">Data</span>Move leads into one real structured database, not a scattered inbox or sheet.</li>
+        <li><span class="tag">DevOps · PM</span>Add uptime monitoring and a documented rollback plan.</li>
+        <li><span class="tag">QA</span>Run a full throttled-3G test pass on the entire enrollment funnel.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>This is an external review based on publicly visible pages only — no access to the backend, database, or hosting dashboard. Anything that needs internal confirmation is flagged as such above.</p>
+  <p class="footer-meta">Prepared for Falcons Basketball Academy · falcons-academy-v1.onrender.com · September 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
